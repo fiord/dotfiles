@@ -1,4 +1,4 @@
-#
+
 # ~/.bashrc
 #
 
@@ -158,4 +158,16 @@ export PATH="$HOME/.node_modules/bin:$PATH"
 # default editor
 export EDITOR=vim
 
-VBOX_USB=usbfs
+# VBOX_USB=usbfs
+
+# pbpaste/pbcopy
+alias pbcopy='clip.exe'
+
+# pyenv
+export PATH="/home/fiord/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+export GITHUB_TOKEN=71944a0f4b7cf9607641a8efd6ba3ea84ddb4459
+
+export PATH="/home/fiord/bin:$PATH"
