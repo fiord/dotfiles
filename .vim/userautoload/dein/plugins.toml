@@ -1,0 +1,36 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+depends = ['/vim-airline-themes']
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+hook_add = '''
+	set laststatus=2
+	let g:airline_powerline_fonts=1
+	let g:airline#extensions#tabline#enabled = 1
+	let g:airline#extensions#tabline#buffer_idx_mode = 1
+	let g:airline#extensions#whitespace#mixed_indent_algo = 1
+	let g:airline_theme = 'dark'
+'''
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+build = './install.sh nightly && yarn install'
+hook_add = 'source ~/.config/nvim/coc-settings.json'
+
+
+[[plugins]]
+repo = 'felipesousa/rupza'
+hook_add = '''
+  set background=dark
+  au MyAutoCmd VimEnter * nested colorscheme rupza
+'''
+
+# languages
+[[plugins]] # toml syntax
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
