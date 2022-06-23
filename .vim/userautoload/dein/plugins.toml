@@ -18,16 +18,10 @@ hook_add = '''
 
 [[plugins]]
 repo = 'neoclide/coc.nvim'
+rev = 'release'
+on_i = 1
+merged = '0'
 build = './install.sh nightly && yarn install'
-hook_add = 'source ~/.config/nvim/coc-settings.json'
-
-
-[[plugins]]
-repo = 'felipesousa/rupza'
-hook_add = '''
-  set background=dark
-  au MyAutoCmd VimEnter * nested colorscheme rupza
-'''
 
 # languages
 [[plugins]] # toml syntax
