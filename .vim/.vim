@@ -1,1 +1,0 @@
-/home/fiord/dotfiles/.vim
