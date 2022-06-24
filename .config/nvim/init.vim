@@ -27,9 +27,15 @@ if dein#load_state(s:dein_dir)
 
 	call dein#load_toml('~/.vim/userautoload/dein/plugins.toml', {'lazy': 0})
 	call dein#load_toml('~/.vim/userautoload/dein/lazy.toml', {'lazy': 1})
+  " color theme
+  " call dein#add('tomasr/molokai')
+  call dein#add('felipesousa/rupza')
 
 	call dein#end()
 	call dein#save_state()
+
+  " color theme settings
+  colorscheme rupza
 endif
 
 " Required:
