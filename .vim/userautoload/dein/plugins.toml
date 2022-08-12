@@ -28,3 +28,6 @@ build = './install.sh nightly && yarn install'
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
+[[plugins]]
+repo = 'preservim/nerdtree'
+
