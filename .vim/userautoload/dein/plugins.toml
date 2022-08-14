@@ -16,13 +16,6 @@ hook_add = '''
 	let g:airline_theme = 'dark'
 '''
 
-[[plugins]]
-repo = 'neoclide/coc.nvim'
-rev = 'release'
-on_i = 1
-merged = '0'
-build = './install.sh nightly && yarn install'
-
 # languages
 [[plugins]] # toml syntax
 repo = 'cespare/vim-toml'
