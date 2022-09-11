@@ -8,7 +8,7 @@ augroup END
 
 " Required:
 set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
-set runtimepath+=~/.vim/
+set runtimepath+=~/.vim
 runtime! userautoload/init/*.vim
 runtime! userautoload/dein/*.vim
 
@@ -33,15 +33,15 @@ if dein#load_state(s:dein_dir)
 
 	call dein#end()
 	call dein#save_state()
-
-  " color theme settings
-  colorscheme rupza
-
-  " Start NERDTree and put the cursor back in the other window.
-  autocmd VimEnter * NERDTree | wincmd p
-  " Exit Vim if NERDTree is the only window remaining in the only tab.
-  autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 endif
+
+" color theme settings
+colorscheme rupza
+
+" Start NERDTree and put the cursor back in the other window.
+autocmd VimEnter * NERDTree | wincmd p
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 " Required:
 filetype plugin indent on
