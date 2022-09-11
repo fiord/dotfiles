@@ -166,8 +166,19 @@ alias pbcopy='clip.exe'
 # pyenv
 export PATH="/home/fiord/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 export GITHUB_TOKEN=71944a0f4b7cf9607641a8efd6ba3ea84ddb4459
 
 export PATH="/home/fiord/bin:$PATH"
+
+# blender
+export PATH="$PATH:$HOME/blender-git/build_linux/bin/blender"
+
+# jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+# go
+export PATH="/usr/local/go/bin:$PATH"
+

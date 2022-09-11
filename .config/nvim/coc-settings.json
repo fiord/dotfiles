@@ -27,6 +27,6 @@
     "jedi": {
       "enable": true,
       "startupMessage": false,
-      "executable.command": "/Library/Frameworks/Python.framework/Versions/3.10/bin/jedi-language-server"
+      "executable.command": "~/.pyenv/shims/jedi-language-server"
     }
 }
